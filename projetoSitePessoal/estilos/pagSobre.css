@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20;
+}
+h2{
+    color:rgb(80, 1, 1);
+    margin-bottom: 10;
+}
+.perfil{
+    position: relative;
+    margin-bottom: 40px;
+}
+.perfil p  {
+    max-width: 600;
+}
+section header {
+    all: unset;
+    display: inline-block;
+    background-color: linear-gradient(45deg, #ffd700,#ffcc00 );
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size:12px;
+    font-weight: bold;
+    margin-top: 0;
+}
+section ul {
+    margin-top:10px;
+    padding-left: 0; /*remove o recuo padrão*/
+    text-align: center;
+}
+section ul li{
+    list-style: square;
+    list-style-position: inside; /*mantem o marcador junto com o texto*/
+}
+/*animação hover*/
+section ul li:hover {
+    color:#520303;
+    transform: translateX(5px);
+    cursor: pointer;
+}
+aside {
+    float:right;
+    width: 30;
+    background-color: #030101;
+    padding:10px;
+    border-radius: 8px;
+    margin-top: 0;
+}
+footer{
+    clear: both;
+}
+
+@media(max-width:768px){
+    .perfil{
+        flex-direction: column;
+        text-align: center;
+    }
+    section, aside{
+        float: none;
+        width: 100%;
+    }
+    aside{
+        margin-top: 20px;
+    }
+}
+
+
