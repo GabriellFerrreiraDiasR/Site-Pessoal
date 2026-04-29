@@ -20,11 +20,11 @@ body header{
     display: flex; /*a posição do elemento em relação a tela*/
     align-items: center; /*alinhamento dos itens do elemento, neste caso o header*/
     padding: 20px; /*espaçamento interno do elemento, adiciona espaço entre o conteúdo e as bordas dp contêner(elemento)*/
-    position: fixed; /*posição do elemento*/
+    position: relative; /*posição do elemento*/
     top: 0; /**/
     width: 100%;
     height: 80px;
-    justify-content: start; /**/
+    justify-content: center; /**/
     z-index: 1100; /*mantém o cabeçalho acima do resto*/  
     /*Define a camada do elemento, quanto maior o valor mais a frente ele fica sobre os outros elementos*/
 }
@@ -36,6 +36,7 @@ header h1 {
 }
 header figure {
     margin: 0 15 px;
+    left: 15px;
 }
 nav{
     background-color: #410101;

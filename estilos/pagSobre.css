@@ -1,6 +1,13 @@
 *{
     padding: 0;
     margin: 0;
+
+}
+header h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
 }
 main {
     max-width: 1000px;
