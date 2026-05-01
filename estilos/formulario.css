@@ -1,7 +1,7 @@
 #Formulario{
     max-width: 400px;
     padding: 20px;
-    margin: 10px auto;
+    margin: 5px auto;
     border-radius: 8px;
 }
 input[type="text"],
@@ -17,10 +17,35 @@ textarea{
     border-radius: 4px;
 }
 input[type="submit"]{
-    padding: 5px;
+    padding: 14px 20px;
     background-color: rgb(53, 1, 1);
-    color: white;
+    color: blanchedalmond;
+    width: 100%;
+    clear: both;
     border-radius: 4px;
     cursor: pointer;
     margin: 8px auto;
+}
+input[type="submit"]:hover{
+    background-color: brown;
+    color: rgb(48, 1, 1);
+
+}
+fieldset legend{
+    font-weight: bold;
+    font-size: large;
+    padding: 10px;
+}
+fieldset{
+    background-color: rgba(220, 20, 60, 0.295);
+    margin: 10px auto;
+    padding: 5px;
+    border: solid rgb(59, 1, 1);
+    color: blanchedalmond;
+}
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center; /* centraliza horizontal */
+    align-items: center;     /* centraliza vertical (opcional) */
 }
