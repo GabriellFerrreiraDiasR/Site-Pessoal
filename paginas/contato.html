@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +8,7 @@
     <link rel="stylesheet" type="text/css" href="../estilos/layout.css">
     <link rel="stylesheet" href="../estilos/formulario.css">
     <script>
-        let nome = prompt("Informe seu nome: ")
-        //console.log("Seja bem vindo "+ nome + " nas aventuras com JS");
-        alert("Seja bem vindo" + nome + " nas aventuras com JS");
+        
     </script>
 </head>
 <body>
@@ -49,15 +47,17 @@
                         <option value="Feedback">Feedback</option>
                         <option value="Outro">Outro</option>
                     </select>
-                    <input type="submit" id="submit">
+                    <!--<input type="submit" id="submit">-->
+                    <button onclick="mostrarDadosForm(event)">Enviar</button>
                 </form>
             </fieldset>
-            
+            <h2 id="resposta"></h2>
         </section>
     </main>
     <footer>
         <p>Rodapé da Página</p>
         <p>Desenvolvido por Gabriell Rodrigues &copy;2026</p>
     </footer>
+    <script src="../script/enviarDadosForm.js"></script>
 </body>
 </html>
